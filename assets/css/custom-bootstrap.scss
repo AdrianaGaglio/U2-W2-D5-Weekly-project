@@ -63,17 +63,17 @@ $new-gray: rgb(179, 179, 179);
 $new-dark-gray: rgb(81, 81, 81);
 
 $new-colors: (
-  "prova0": $new-black,
-  "prova1": $new-gray,
-  "prova2": $new-dark-gray
+  "black": $new-black,
+  "gray": $new-gray,
+  "dark-gray": $new-dark-gray
 );
 
-// $new-colors-text: (
-//   "gray": $new-gray,
-//   "dark-gray": $new-dark-gray
-// );
+$new-colors-text: (
+  "gray": $new-gray,
+  "dark-gray": $new-dark-gray
+);
 
 $theme-colors: map-merge($theme-colors, $new-colors);
-// $theme-colors: map-merge($theme-colors-text, $new-colors-text);
+$theme-colors: map-merge($theme-colors-text, $new-colors-text);
 
 @import "../scss/bootstrap";
