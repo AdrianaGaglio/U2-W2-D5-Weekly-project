@@ -14,18 +14,6 @@
           <a class="navbar-brand me-0 flex-shrink-1" href="./"><img src="./assets/imgs/netflix_logo.png" class="w-logo-sm" alt="netflix_logo" /></a>
           <div class="d-flex flex-lg-grow-1 flex-shrink-1 align-items-center">
             <div class="flex-lg-grow-1 order-1 order-lg-0">
-              <!-- <button
-                class="navbar-toggler p-0 border-light"
-                type="button"
-                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon text-light"></span>
-              </button> -->
               <button
                 class="navbar-toggler p-0 border-light"
                 type="button"
@@ -50,13 +38,13 @@
                     <a class="nav-link active" href="#">TV Shows</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Movies</a>
+                    <a class="nav-link" href="#">Movies</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Recently Added</a>
+                    <a class="nav-link" href="#">Recently Added</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">My List</a>
+                    <a class="nav-link" href="#">My List</a>
                   </li>
                 </ul>
               </div>
@@ -88,17 +76,17 @@
       </nav>
     </header>
     <main class="bg-dark py-3 p-lg-3">
-      <section class="filters container d-flex align-items-center">
+      <section class="filters container d-flex align-items-center justify-content-between">
         <h1 class="h1 text-light mb-0 flex-lg-grow-0">TV Shows</h1>
 
-        <div class="d-flex flex-grow-1 align-items-center">
-          <select class="form-select text-bg-dark rounded-0 border border-secondary w-150 me-auto flex-shrink-1" aria-label="Default select example">
+        <div class="d-flex flex-lg-grow-1 align-items-center flex-wrap ps-lg-3 justify-content-end gap-2">
+          <select class="form-select text-bg-dark rounded-0 border border-secondary w-150 me-sm-auto flex-shrink-1" aria-label="Default select example">
             <option selected>Genres</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
-          <div class="">
+          <div class="d-flex gap-1">
             <div class="border border-1 border-secondary d-inline-block px-1 text-center text-secondary">
               <i class="bi bi-justify-left"></i>
             </div>
@@ -119,30 +107,70 @@
               <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
             </div>
             <div class="col">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media2.webp" class="w-100" alt="" />
             </div>
             <div class="col">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media3.webp" class="w-100" alt="" />
             </div>
             <div class="col">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media4.jpg" class="w-100" alt="" />
             </div>
             <div class="col">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media5.webp" class="w-100" alt="" />
             </div>
             <div class="col d-md-none">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media6.jpg" class="w-100" alt="" />
             </div>
             <div class="col d-md-none">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media7.webp" class="w-100" alt="" />
             </div>
             <div class="col d-md-none">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media8.webp" class="w-100" alt="" />
             </div>
             <div class="col d-md-none">
-              <img src="./assets/imgs/media/media1.jpg" class="w-100" alt="" />
+              <img src="./assets/imgs/media/media9.jpg" class="w-100" alt="" />
             </div>
           </div>
+
+          <!-- <div class="row">
+            <div class="col">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner overflow-x-hidden">
+                  <div class="carousel-item active w-200">
+                    <div class="row gap-0 g-0">
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+
+                      <img src="./assets/imgs/media/media0.webp" class="w-150" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div> -->
         </div>
       </section>
       <section class="watch-again py-3">
