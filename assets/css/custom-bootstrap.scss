@@ -68,7 +68,13 @@ $new-colors: (
   "dark-gray": $new-dark-gray
 );
 
+$new-colors-text: (
+  "gray": $new-gray,
+  "dark-gray": $new-dark-gray
+);
+
 $theme-colors: map-merge($theme-colors, $new-colors);
+$theme-colors: map-merge($theme-colors-text, $new-colors-text);
 
 @import "../scss/utilities/api";
 @import "../scss/bootstrap";
