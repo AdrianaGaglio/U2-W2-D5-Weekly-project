@@ -58,5 +58,17 @@ $utilities: map-merge(
   )
 );
 
+$new-black: rgb(34, 31, 31);
+$new-gray: rgb(179, 179, 179);
+$new-dark-gray: rgb(81, 81, 81);
+
+$new-colors: (
+  "black": $new-black,
+  "gray": $new-gray,
+  "dark-gray": $new-dark-gray
+);
+
+$theme-colors: map-merge($theme-colors, $new-colors);
+
 @import "../scss/utilities/api";
 @import "../scss/bootstrap";
