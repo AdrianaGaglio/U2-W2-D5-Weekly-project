@@ -1,0 +1,62 @@
+@import "../scss/functions";
+@import "../scss/variables";
+@import "../scss/variables-dark";
+@import "../scss/maps";
+@import "../scss/mixins";
+@import "../scss/utilities";
+
+/* CUSTOMIZZAZIONI */
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "width"), "values"),
+              (
+                20: 20%,
+                150: 150px,
+                200: 200%,
+                logo: 150px,
+                "logo-sm": 130px,
+                thumb: 30px
+              )
+            )
+        )
+      ),
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "font-size"), "values"),
+              (
+                smaller: $font-size-base * 0.7,
+                6: $font-size-base * 0.85
+              )
+            )
+        )
+      ),
+    "height":
+      map-merge(
+        map-get($utilities, "height"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "height"), "values"),
+              (
+                thumb: 30px
+              )
+            )
+        )
+      )
+  )
+);
+
+@import "../scss/utilities/api";
+@import "../scss/bootstrap";
