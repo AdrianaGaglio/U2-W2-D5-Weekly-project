@@ -1,11 +1,23 @@
 @import "../scss/functions";
 @import "../scss/variables";
-@import "../scss/variables-dark";
+
+/* CUSTOMIZZAZIONI */
+
+$new-black: rgb(34, 31, 31);
+$new-gray: rgb(179, 179, 179);
+$new-dark-gray: rgb(81, 81, 81);
+
+$colors: (
+  "black": $new-black,
+  "gray": $new-gray,
+  "dark-gray": $new-dark-gray
+);
+
+$theme-colors: map-merge($theme-colors, $colors);
+
 @import "../scss/maps";
 @import "../scss/mixins";
 @import "../scss/utilities";
-
-/* CUSTOMIZZAZIONI */
 
 $utilities: map-merge(
   $utilities,
@@ -57,23 +69,5 @@ $utilities: map-merge(
       )
   )
 );
-
-$new-black: rgb(34, 31, 31);
-$new-gray: rgb(179, 179, 179);
-$new-dark-gray: rgb(81, 81, 81);
-
-$new-colors: (
-  "black": $new-black,
-  "gray": $new-gray,
-  "dark-gray": $new-dark-gray
-);
-
-$new-colors-text: (
-  "gray": $new-gray,
-  "dark-gray": $new-dark-gray
-);
-
-$theme-colors: map-merge($theme-colors, $new-colors);
-$theme-colors: map-merge($theme-colors-text, $new-colors-text);
 
 @import "../scss/bootstrap";

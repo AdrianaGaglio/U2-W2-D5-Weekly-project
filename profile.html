@@ -25,26 +25,34 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-lg-6 mx-lg-auto px-md-0 border border-0 border-top border-bottom border-secondary">
+            <div class="col-12 col-lg-6 mx-lg-auto px-md-0 border border-0 border-top border-bottom border-gray border-opacity-25">
               <div class="row">
                 <div class="col-6 col-sm-4 col-md-3 py-3">
-                  <img src="./assets/imgs/avatar.png" class="w-100" alt="avatar" />
+                  <div class="position-relative">
+                    <img src="./assets/imgs/avatar.png" class="w-100" alt="avatar" />
+                    <div
+                      class="h-thumb w-thumb text-gray rounded-circle bg-black d-flex align-items-center justify-content-center border border-2 border-white position-absolute bottom-0 start-0 mb-2 ms-2"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 col-md-9 py-3 pe-md-5">
-                  <div class="pb-3 border border-0 border-bottom border-secondary">
-                    <h6 class="text-bg-secondary p-2 fw-normal mb-3">Strive Student</h6>
+                  <div class="pb-3 border border-0 border-bottom border-gray border-opacity-25">
+                    <h6 class="text-bg-gray opacity-75 p-2 fw-normal mb-3">Strive Student</h6>
                     <p class="text-bg-dark mb-1">Language:</p>
-                    <select class="form-select text-bg-dark rounded-0 border border-secondary w-150" aria-label="Default select example">
+                    <select class="form-select text-bg-dark rounded-0 border border-gray border-opacity-25 w-150" aria-label="Default select example">
                       <option selected>English</option>
                       <option value="1">Italian</option>
                       <option value="2">French</option>
                       <option value="3">Spanish</option>
                     </select>
                   </div>
-                  <div class="py-3 border border-0 border-bottom border-secondary">
+                  <div class="py-3 border border-0 border-bottom border-gray border-opacity-25">
                     <p class="text-bg-dark mb-1 fs-5">Maturity Settings:</p>
-                    <h6 class="text-bg-secondary p-2 fw-normal mb-3 text-uppercase fw-medium">Strive Student</h6>
+                    <h6 class="text-bg-dark-gray p-2 fw-normal mb-3 text-uppercase fw-medium d-inline-block">All maturity ratings</h6>
                     <p class="text-bg-dark mb-0 fs-6">Show titles of all <span class="fw-medium">maturity ratings</span> for this profile.</p>
+                    <button class="btn btn-outline-gray rounded-0 text-uppercase fw-medium px-1 px-md-4 py-1 mt-2 flex-grow-1 flex-lg-grow-0">Edit</button>
                   </div>
                   <div class="pt-3">
                     <p class="text-bg-dark mb-1 fs-5">Autoplay controls</p>
