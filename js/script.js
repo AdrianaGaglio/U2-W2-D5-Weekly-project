@@ -7,7 +7,9 @@ let step = 0;
 
 prev.onclick = () => {
   step += 150;
-  scroll.style.transform = `translate(-${step}px, 0)`;
+  if (step < 1500) {
+    scroll.style.transform = `translate(-${step}px, 0)`;
+  }
 };
 
 next.onclick = () => {
