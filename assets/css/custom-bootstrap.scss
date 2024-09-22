@@ -31,6 +31,7 @@ $utilities: map-merge(
               map-get(map-get($utilities, "width"), "values"),
               (
                 20: 20%,
+                100px: 100px,
                 150: 150px,
                 200: 200%,
                 logo: 150px,
@@ -62,6 +63,7 @@ $utilities: map-merge(
             map-merge(
               map-get(map-get($utilities, "height"), "values"),
               (
+                20px: 20px,
                 thumb: 30px
               )
             )
@@ -69,5 +71,18 @@ $utilities: map-merge(
       )
   )
 );
+
+$object-positions: (
+  "top": top,
+  "bottom": bottom,
+  "center": center,
+  "left": left
+);
+
+@each $position, $value in $object-positions {
+  .object-#{$position} {
+    object-position: $value;
+  }
+}
 
 @import "../scss/bootstrap";
